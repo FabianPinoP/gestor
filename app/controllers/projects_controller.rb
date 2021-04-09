@@ -1,4 +1,7 @@
 class ProjectsController < ApplicationController
+
+http_basic_authenticate_with name: "desafiovamoscontodo", password: "XAHTJEAS23123%23", only: :dashboard
+
     def dashboard
         if params[:state].present?
             @projects = Project.where('state = ?', params[:state])
