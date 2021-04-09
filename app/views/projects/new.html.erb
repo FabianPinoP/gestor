@@ -1,0 +1,18 @@
+<h1>Formulario</h1>
+    <form method="get" action="/projects/create">
+        <label for="name">Nombre</label>
+            <input name = "name">
+        <label for="description">Descripcion</label>
+            <textarea name = "description"></textarea>
+        <label for="start_date">Fecha de inicio</label>
+            <input name = "start_date" type="date">
+        <label for="finish_date">Fecha de termino</label>
+            <input name = "finish_state"type="date">
+        <label for="state">Estado</label>    
+            <select name = "state">
+                <option value="propuesta">Propuesta</option>
+                <option value="progreso">En progreso</option>
+                <option value="terminado">Terminado</option> 
+            </select>
+        <input type="submit" value="Enviar">
+    </form>
